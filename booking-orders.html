@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Stock List</title>
+    <link rel="icon" type="image/x-icon" href="img/LOGO.jpg">
+</head>
+
+<body>
+    <a href="index.html" class="top-a">
+        <h2 class="main-heading">VIJAYLAXMI SALES CORPORATION</h2>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav m-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="purchase-order.html" class="nav-item nav-link">Purchase Orders</a>
+                    <a href="sales-order.html" class="nav-item nav-link">Sales Orders</a>
+                    <a href="stocklist.html" class="nav-item nav-link">Stock list</a>
+                    <a href="booking-orders.html" class="nav-item nav-link active">Booking Orders</a>
+                    <a href="login.html" class="nav-item nav-link">Logout</a>
+
+                </div>
+                <!-- <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container-fluid">
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Add New Booking</h5>
+
+                    <div class="search-item">
+
+                        <div class="row form">
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Party Name">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Item Name">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Brand">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Quantity">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Rate">
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12 mt-2 text-center">
+                                <div class="button ">
+                                    <input type="btn" value="Add" class="btn btn-success">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Booked Orders List</h5>
+                    <div class="card-content">
+                        <div class="table table-responsive">
+                            <table width="80%" id="stock-table"
+                                class="m-auto table-bordered table-hover table table-responsive ">
+                                <thead>
+                                    <tr class="table100-head">
+                                        <th class="column1">Party Name</th>
+                                        <th class="column2">Item Name</th>
+                                        <th class="column3">Brand</th>
+                                        <th class="column4">Quantity</th>
+                                        <th class="column5">Rate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="column1">MPK Pvt Ltd</td>
+                                        <td class="column2">MS Angle</td>
+                                        <td class="column3">PRITHVI</td>
+                                        <td class="column4">24.220</td>
+                                        <td class="column5">20,021</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="column1">Vandana Ent</td>
+                                        <td class="column2">MS Channel</td>
+                                        <td class="column3">MSP</td>
+                                        <td class="column4">1</td>
+                                        <td class="column5">56,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="column1">Rathi Steels</td>
+                                        <td class="column2">MS Bar</td>
+                                        <td class="column3">TATA</td>
+                                        <td class="column4">4.5</td>
+                                        <td class="column5">57,650</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="column1">Sharma Distributors</td>
+                                        <td class="column2">MS Pipe</td>
+                                        <td class="column3">MPK</td>
+                                        <td class="column4">21</td>
+                                        <td class="column5">80,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="column1">RCH Enterprises</td>
+                                        <td class="column2">TMT 16mm</td>
+                                        <td class="column3">MOIRA</td>
+                                        <td class="column4">63</td>
+                                        <td class="column5">74,560</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-line">
+            C-62(B),Road No. 1(C), V.K.I. Area, Jaipur - 302013
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Stock List</title>
+    <link rel="icon" type="image/x-icon" href="img/LOGO.jpg">
+</head>
+
+<body>
+    <a href="index.html" class="top-a">
+        <h2 class="main-heading">VIJAYLAXMI SALES CORPORATION</h2>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav m-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="purchase-order.html" class="nav-item nav-link">Purchase Orders</a>
+                    <a href="sales-order.html" class="nav-item nav-link">Sales Orders</a>
+                    <a href="stocklist.html" class="nav-item nav-link active">Stock list</a>
+                    <a href="booking-orders.html" class="nav-item nav-link">Booking Orders</a>
+                    <a href="login.html" class="nav-item nav-link">Logout</a>
+
+                </div>
+                <!-- <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="list-heading">
+
+    </div>
+    <div class="search-item">
+        <div class="container-fluid">
+            <div class="row form">
+
+                <div class="col-lg-2">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Code">
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Item Name">
+                    </div>
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Brand">
+                    </div>
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="HSN">
+                    </div>
+
+                </div>
+                <div class="col-lg-2">
+                    <div class="button">
+                        <input type="button" value="Submit" class="btn btn-success">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row table-row p-0">
+        <div class="card">
+            <div class="card-header">
+                <h3>STOCK LIST</h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table table-responsive">
+                <table width="80%" id="stock-table" class="m-auto table-bordered table-hover table table-responsive ">
+                    <thead>
+                        <tr class="table100-head">
+                            <th class="column1">Code</th>
+                            <th class="column2">Item Name</th>
+                            <th class="column3">Brand</th>
+                            <th class="column4">HSN</th>
+                            <th class="column5">Pcs/Pkt</th>
+                            <th class="column6">Quantity</th>
+                            <th class="column7">Rate</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">MSP</td>
+                            <td class="column4">1020102</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Channel</td>
+                            <td class="column3">TATA</td>
+                            <td class="column4">8588552</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$756.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS BAR</td>
+                            <td class="column3">PRITHVI</td>
+                            <td class="column4">3020103</td>
+                            <td class="column5">2</td>
+                            <td class="column6">$44.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">SAIL</td>
+                            <td class="column4">4414114</td>
+                            <td class="column5">3</td>
+                            <td class="column6">$30.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Channel</td>
+                            <td class="column3">JSW</td>
+                            <td class="column4">6532436</td>
+                            <td class="column5">6</td>
+                            <td class="column6">$1494.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">SHARMA</td>
+                            <td class="column4">9020902</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$699.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Channel</td>
+                            <td class="column3">MPK</td>
+                            <td class="column4">2213321</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$2199.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">JINDAL</td>
+                            <td class="column4">8040804</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Channel</td>
+                            <td class="column3">MOIRA</td>
+                            <td class="column4">6447336</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">MANGLA</td>
+                            <td class="column4">2257462</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Channel</td>
+                            <td class="column3">VSP</td>
+                            <td class="column4">2455323</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$2199.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">AM/NS</td>
+                            <td class="column4">0867900</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Channel</td>
+                            <td class="column3">ELEGANT</td>
+                            <td class="column4">1331122</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">001</td>
+                            <td class="column2">MS Angle</td>
+                            <td class="column3">MSP</td>
+                            <td class="column4">9090909</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                            <td class="column7">$999.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-line">
+            C-62(B),Road No. 1(C), V.K.I. Area, Jaipur - 302013
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
